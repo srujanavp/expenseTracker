@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Products</h1>
+    <div class="form-group">
+      <label for="expense">Selling Price:</label>
+      <input type="number" class="form-control" id="expense" placeholder="Enter Price">
+    </div>
+    <div class="form-group">
+      <label for="description">Product name:</label>
+      <input type="text" class="form-control" id="description" placeholder="Enter product name">
+    </div>
+    <div class="form-group">
+      <label for="category">Choose a Category:</label>
+      <select class="form-control" id="category">
+        <option value="Electronics">Electronic items</option>
+        <option value="Food">Food items</option>
+        <option value="SkinCare">Skin Care items</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addExpense()">Add Order</button>
+    <hr>
+    <h2></h2>
+    <ul id="expenseList" class="list-group"></ul>
+    <h2></h2>
+    <h2></h2>
+    
+      <!-- Display expenses here -->
+    </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
